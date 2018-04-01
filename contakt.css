@@ -206,7 +206,7 @@
 		float: left;
 		width: 160px;
 	}
-	#map{
+	.maps{
 		display: block;
 		width: 450px;
 		margin: 0 auto;

@@ -6,6 +6,8 @@
     }
    	body{
    		font-family: Regular;
+   		margin:0;
+   		list-style:none;
    	}
 
 /*Меню*/	
@@ -21,6 +23,8 @@
 	.dws-menu > ul{
  		display: flex;
  		justify-content: center;
+ 		padding-left: 220px;
+ 		width: 510px;
 	}
 	.dws-menu > ul li{
  		position: relative;
@@ -32,22 +36,14 @@
  		color: #fff;
  		text-decoration: none;
  	}
-	.dws-menu li ul{
-	 	min-width: 350px;
- 		display: none;
- 	}
-	.dws-menu [type="checkbox"],
-	.dws-menu label.toggleSubmenu{
+	.dws-menu [type="checkbox"]{
 	 	display: none;
 	}
 	.dws-menu label.toggleMenu{
  		display: none;
  		padding: 16px 140px;
- 		text-transform: uppercase;
  		font-size: 18px;
- 		cursor: pointer;
- 		position: relative;
-	}
+ 	}
 	.dws-menu label.toggleMenu .fa{
  		position: absolute;
  		top: 15px;
@@ -57,12 +53,18 @@
 
 /*Текст*/
 
+	h4{
+		font-size: 36px;
+		text-align: center;
+		color: #000;
+		margin:30px 0px -10px 0px;
+	}
 	h1{
   		font-size: 48px;
   		font-weight: bold;
   		text-align: center;
   		color: #fff;
-  		padding-top: 100px;
+  		padding-top: 75px;
   	}
 	p{
 		font-size: 18px;
@@ -82,6 +84,12 @@
   		text-align: center;
   		color: #fff;
   		padding-top:20px;
+	}
+	.img_text{
+		margin:-5px 0px 10px 0px;
+		color:#111;
+		text-align: left;
+		padding-left: 100px;
 	}
 	.img_block_1_text{
 		margin:5px 20px 0px 0px;
@@ -109,9 +117,8 @@
 		font-size: 26px;
 		text-align: center;
 		width: 100%;
-		margin-top: -160px;
 	}
-	.logotipVK{
+	.logo_VK{
 		display: inline-block;
 		font-size:18px;
 		text-align: center;
@@ -120,20 +127,27 @@
 		padding: 35px 0px 0px 350px;
 		position: absolute;
 	}
-
+	
 /*Изображения*/
 
-	.logotip{
-		padding-top:2px; 
+	.logo{
+		margin:2px 0px 0px 25px; 
 		display: inline-block;
 		float: left;
 	}
-	
+	.img_main{
+		display: inline-block;
+		padding-right: 37px;
+		width: 450px;
+		height: 70px;
+		margin:70px 0px 0px 0px;
+		vertical-align:top;
+	}
 	.img_block_1{
 		display: inline-block;
 		width: 500px;
 		height: 70px;
-		margin:30px 30px 0px 0px;
+		margin:0px 30px 30px 0px;
 		vertical-align:top;
 		float: left;
 	}
@@ -149,13 +163,20 @@
 		display: block;
 		float: right;
 		padding: 28px 450px 0px 0px;
+	}
+	.maps{
+		display: block;
+		width: 1080px;
+		height: auto;
+		margin: 70px 0px 70px 0px;
 	}	
 
 /* Блоки отвечающие за ширину контента*/
+
 	.block{
    		width: 1080px;
    		display: block;
-  		margin: 0 auto; 
+  		margin: 0; 
   	}
   	section{
  		display: block;
@@ -171,8 +192,7 @@
    		width: 1080px;
    		display: block;
    		margin: 0 auto;
-   		padding-bottom: 90px;
-	}
+   	}
 	header{
  		display: inline-block;
  		width: 100%;
@@ -184,34 +204,47 @@
 		height: 100px;
 		background-color: #1b1918;
 	}
+	.block{
+   		width: 1080px;
+   		display: block;
+   		margin: 0 auto;
+  	}
 	
 	
-@media all and (max-width: 600px){
+@media screen and (max-width: 600px){
 /*Меню*/
+
 	nav{
 		background-color:#1b1918;
 	}
 	.toggleMenu{
-		color: #fff;
+		width: 100px;
+		height: auto;
 		background: #1b1918
 	}
  	.dws-menu{
   		overflow: hidden;
-  		width: 250px;
+  		margin:0;
+  		width: 100%;
+  		background: #1b1918
 	}
  	.dws-menu ul{
   		display: block;
   		max-height: 0;
+  		margin: 0;
    	}
    	.dws-menu label.toggleMenu{
  		display: block;
+    	width: 100px;
+   		height: auto;
+    	padding-left: 140px;
+    	margin-top: -55px;
  	}
  	input.toggleMenu:checked + label.toggleMenu{
   		background:#1b1918;
   		color: #fff;
   	}
- 	input.toggleMenu:checked ~ ul,
- 	input.toggleSubmenu:checked ~ ul{
+ 	input.toggleMenu:checked ~ ul{
   		display: block;
   		position: relative;
  	 	max-height: 5000px;
@@ -220,10 +253,36 @@
 
 /*Текст*/
 
+	.mini_menu{
+		padding-left: 170px;
+		margin: 0;
+	}
+	.img_block_1_text{
+		margin:-5px 20px 0px 0px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+	}
+	.img_block_2_text{
+		margin:43px 0px 0px 14px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+	}
+	.block_2_paragraph{
+		display: inline-block;
+		color: #000;
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+	}
 	section{
 	 	text-align: center;
 	  	width: 100%;
 	  	height: auto;
+	  	margin-top: 50px;
 	  	display: inline-block;
 	  	background-color: #000;
 	}
@@ -232,6 +291,12 @@
 	  	font-weight: bold;
 	  	text-align: center;
 	  	color: #fff;
+	  	margin-top: -80px;
+	}
+	h4{
+		font-size: 36px;
+		text-align: center;
+		margin:30px 0px 30px 0px;
 	}
 	h2{
 		width:100%;
@@ -240,58 +305,66 @@
 		text-align: center;
 		padding-top:30px;
 	}
-	.logotipVK{
+	.logo_VK{
 		display: inline-block;
 		font-size:18px;
 		text-align: center;
 		text-decoration: none;
 		color: #fff;
-		margin-left: -350px;
+		margin: -10px 0px 0px -320px;
+	}
+	.img_text{
+	    margin: -2px 0px -4px 0px;
+    	color: #111;
+    	text-align: left;
+    	padding-left: 100px;
 	}
 
 /*Изображения*/
 
-	.logotip{
-		padding-top: 10px; 
+	.logo{
+		padding-top: 7px; 
 		display: inline-block;
 		width: 160px;
 		float: left;
+		margin:0;
 	}
 	.img_block_1{
-		list-style:none;
 		text-align: left;
-		float: center;
 		color: #000;
-		width: 400px;
+		width: 100%;
 		display:block;
 	}
-	.img_block2{
+	.img_block_2{
 		display: inline-block;
-		list-style:none;
-		width: 400px;
+		width: 100%;
 		height: 128px;
 		border: 1px solid #d3d3d3;
-		margin: 10px 20px 30px 0px;
+		margin: 10px 0px 30px 0px;
 		vertical-align:top;
 	}
 	.img_foot{
 		display: block;
-		float: right;
-		padding: 30px 110px 0px 0px;
+    	float: right;
+    	width: 100px;
+    	height: 70px;
+    	padding: 20px 0px 0px 0px;
 	}
+	.img_main{
+		width: 350px;
+    	margin: 0; 
+    	padding:20px 0;
+    	text-align: left; 
+    	display: inline-block;
+    }
 
 /* Блоки отвечающие за ширину контента*/
 
 	header{
  		display: inline-block;
  		width: 100%;
- 		height: 100px;
+ 		height: 69px;
  		background-color: #1b1918; 
- 	}
- 	.block{
-   		width: 400px;
-   		display: block;
-  		margin: 0 auto; 
  	}
  	footer{
 		display: inline-block;
@@ -299,10 +372,24 @@
 		height: auto;
 	}
 	.image{
-   		width: 400px;
+   		width: 100%;
    		display: block;
-   		margin: 0 auto; 
+   		margin: 0 auto;
+   		padding: 0;
+   		 
 	}
+	.maps{
+		max-width: 400px;
+		height: auto;
+		background-color: #fff;
+
+	}
+	.block{
+   		width: 100%;
+   		display: block;
+  		margin: 0;
+  		padding: 0;
+  	}
 }
 
 
