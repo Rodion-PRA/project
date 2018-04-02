@@ -1,13 +1,12 @@
 /*Общее*/
 
 	@font-face{
-   		font-family: Regular; 
+   		font-family: OpenSans; 
     	src: url(shrift/OpenSans-Regular.ttf);
     }
    	body{
-   		font-family: Regular;
+   		font-family: OpenSans;
    		margin:0;
-   		list-style:none;
    	}
 
 /*Меню*/	
@@ -85,6 +84,9 @@
 		text-align: left;
 		padding-left: 100px;
 	}
+	.img_text a{
+		text-decoration: x
+	}
 	.img_block_1_text{
 		margin:5px 20px 0px 0px;
 		color:#000;
@@ -116,10 +118,12 @@
 		display: inline-block;
 		font-size:18px;
 		text-align: center;
-		text-decoration: none;
-		color: #fff;
 		padding: 35px 0px 0px 350px;
 		position: absolute;
+	}
+	.logo_VK a{
+		text-decoration: none;
+		color: #fff;
 	}
 	
 /*Изображения*/
@@ -163,6 +167,7 @@
 		width: 1080px;
 		height: 400px;
 		margin: 70px 0px 70px 0px;
+		list-style: none;
 	}	
 
 /* Блоки отвечающие за ширину контента*/
@@ -208,11 +213,7 @@
 @media screen and (max-width: 600px){
 /*Меню*/
 
-	nav{
-		background-color:#1b1918;
-	}
-	
- 	.dws-menu{
+	.dws-menu{
   		overflow: hidden;
   		margin:0;
   		width: 100%;
@@ -221,6 +222,7 @@
  	.dws-menu ul{
   		display: block;
   		max-height: 0;
+  		padding-left: 220px;
    	}
    	.dws-menu label.toggleMenu{
  		display: block;
@@ -239,7 +241,6 @@
  	 	max-height: 5000px;
  	}
  	
-
 /*Текст*/
 
 	.mini_menu{
@@ -299,9 +300,11 @@
 		display: inline-block;
 		font-size:18px;
 		text-align: center;
+		margin: -10px 0px 0px -320px;
+	}
+	.logo_VK a{
 		text-decoration: none;
 		color: #fff;
-		margin: -10px 0px 0px -320px;
 	}
 	.img_text{
 	    margin: -2px 0px -4px 0px;
@@ -373,6 +376,7 @@
 		background-color: #fff;
 		margin: 0 auto;
 		padding: 10px 0px 20px 0px;
+		list-style: none;
 	}
 	.block{
    		width: 100%;
@@ -384,3 +388,8 @@
 
 
 
+/* ли поменять на  div+
+input
+едитор конфиг+
+препроцесоры css
+сборщик веб пак.*/
