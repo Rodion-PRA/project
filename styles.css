@@ -1,0 +1,392 @@
+/*Общее*/
+
+	@font-face{
+   		font-family: OpenSans;
+    	src: url(shrift/OpenSans-Regular.ttf);
+    }
+   	body{
+   		font-family: OpenSans;
+   		margin:0;
+   	}
+
+/*Меню*/
+
+	.dws-menu* {
+		margin: 0;
+ 		padding: 0px 10px 0px 10px;
+ 		background-color: #1b1918;
+ 	}
+	.dws-menu ul{
+ 		list-style: none;
+	}
+	.dws-menu > ul{
+ 		display: flex;
+ 		justify-content: center;
+ 		padding-left: 520px;
+ 		width: 510px;
+	}
+	.dws-menu > ul li{
+ 		position: relative;
+	}
+	.dws-menu > ul li a{
+ 		display: block;
+ 		padding: 20px 20px 0px 0px;
+ 		font-size: 18px;
+ 		color: #fff;
+ 		text-decoration: none;
+ 	}
+	.dws-menu [type="checkbox"]{
+	 	display: none;
+	}
+	.dws-menu label.toggleMenu{
+ 		display: none;
+ 		padding: 16px 140px;
+ 		font-size: 18px;
+ 	}
+
+/*Текст*/
+
+	h4{
+		font-size: 36px;
+		text-align: center;
+		color: #000;
+		margin:30px 0px -10px 0px;
+	}
+	h1{
+  		font-size: 48px;
+  		font-weight: bold;
+  		text-align: center;
+  		color: #fff;
+  		padding-top: 75px;
+  	}
+	p{
+		font-size: 18px;
+		color:#fff;
+		text-align: center;
+	}
+	h2{
+		width:100%;
+		font-size: 36px;
+		color: #000;
+		text-align: center;
+		padding-top:90px;
+	}
+	h3{
+		font-size: 18px;
+  		font-weight: bold;
+  		text-align: center;
+  		color: #fff;
+  		padding-top:20px;
+	}
+	.img_text{
+		margin:-5px 0px 10px 0px;
+		color:#111;
+		text-align: left;
+		padding-left: 100px;
+	}
+	.img_text a{
+		text-decoration: x
+	}
+	.img_block_1_text{
+		margin:5px 20px 0px 0px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+	}
+	.img_block_2_text{
+		margin:43px 0px 0px 14px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+	}
+	.block_2_header{
+		display: inline-block;
+		font-size: 36px;
+		text-align:center;
+		color: #000;
+		padding-top: 30px;
+		width: 100%;
+	}
+	.block_2_paragraph{
+		display: inline-block;
+		color: #000;
+		font-size: 26px;
+		text-align: center;
+		width: 100%;
+	}
+	.logo_VK{
+		display: inline-block;
+		font-size:18px;
+		text-align: center;
+		padding: 35px 0px 0px 350px;
+		position: absolute;
+	}
+	.logo_VK a{
+		text-decoration: none;
+		color: #fff;
+	}
+
+/*Изображения*/
+
+	.logo{
+		margin:2px 0px 0px 10px;
+		display: inline-block;
+		float: left;
+		position: absolute;
+	}
+	.img_main{
+		display: inline-block;
+		padding-right: 37px;
+		width: 450px;
+		height: 70px;
+		margin:70px 0px 0px 0px;
+		vertical-align:top;
+	}
+	.img_block_1{
+		display: inline-block;
+		width: 500px;
+		height: 70px;
+		margin:0px 30px 30px 0px;
+		vertical-align:top;
+		float: left;
+	}
+	.img_block_2{
+		display: inline-block;
+		width: 320px;
+		height: 128px;
+		border: 1px solid #d3d3d3;
+		margin: 10px 20px 30px 0px;
+		vertical-align:top;
+	}
+	.img_foot{
+		display: block;
+		float: right;
+		padding: 28px 450px 0px 0px;
+	}
+	.maps{
+		width: 1080px;
+		height: 400px;
+		margin: 70px 0px 70px 0px;
+		list-style: none;
+	}
+
+/* Блоки отвечающие за ширину контента*/
+
+	.block{
+   		width: 1080px;
+   		display: block;
+  		margin: 0;
+  	}
+  	section{
+ 		display: block;
+ 		width:1080px;
+ 		margin: 0 auto;
+	}
+	.sectionbord{
+		width: 100%;
+		background-color: #000;
+		height: 450px;
+	}
+	.image{
+   		width: 1080px;
+   		display: block;
+   		margin: 0 auto;
+   	}
+	header{
+ 		display: inline-block;
+ 		width: 100%;
+ 		height: 100px;
+ 		background-color: #1b1918;
+ 	}
+	footer{
+		width: 100%;
+		height: 100px;
+		background-color: #1b1918;
+	}
+	.block{
+   		width: 1080px;
+   		display: block;
+   		margin: 0 auto;
+  	}
+
+
+@media screen and (max-width: 600px){
+/*Меню*/
+
+	.dws-menu{
+  		overflow: hidden;
+  		margin:0;
+  		width: 100%;
+  		background: #1b1918
+	}
+ 	.dws-menu ul{
+  		display: block;
+  		max-height: 0;
+  		padding-left: 220px;
+   	}
+   	.dws-menu label.toggleMenu{
+ 		display: block;
+    	width: 100px;
+   		height: auto;
+    	padding-left: 140px;
+    	margin-top: -55px;
+ 	}
+ 	input.toggleMenu:checked + label.toggleMenu{
+  		background:#1b1918;
+  		color: #fff;
+  	}
+ 	input.toggleMenu:checked ~ ul{
+  		display: block;
+  		position: relative;
+ 	 	max-height: 5000px;
+ 	}
+
+/*Текст*/
+
+	.mini_menu{
+	    padding-left: 170px;
+    	margin-bottom: -40px;
+    	padding-top: 16px;
+	}
+	.img_block_1_text{
+		margin:-5px 20px 0px 0px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+	}
+	.img_block_2_text{
+		margin:43px 0px 0px 14px;
+		color:#000;
+		text-align: left;
+		font-size: 16px;
+	}
+	.block_2_paragraph{
+		display: inline-block;
+		color: #000;
+		font-size: 16px;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+	}
+	section{
+	 	text-align: center;
+	  	width: 100%;
+	  	height: auto;
+	  	margin-top: 50px;
+	  	display: inline-block;
+	  	background-color: #000;
+	}
+	h1{
+	  	font-size: 48px;
+	  	font-weight: bold;
+	  	text-align: center;
+	  	color: #fff;
+	  	margin-top: -80px;
+	}
+	h4{
+		font-size: 36px;
+		text-align: center;
+		margin:30px 0px 30px 0px;
+	}
+	h2{
+		width:100%;
+		font-size: 36px;
+		color: #000;
+		text-align: center;
+		padding-top:30px;
+	}
+	.logo_VK{
+		display: inline-block;
+		font-size:18px;
+		text-align: center;
+		margin: -10px 0px 0px -320px;
+	}
+	.logo_VK a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.img_text{
+	    margin: -2px 0px -4px 0px;
+    	color: #111;
+    	text-align: left;
+    	padding-left: 100px;
+	}
+
+/*Изображения*/
+
+	.logo{
+		padding-top: 7px;
+		display: inline-block;
+		width: 160px;
+		float: left;
+		margin:0;
+	}
+	.img_block_1{
+		text-align: left;
+		color: #000;
+		width: 100%;
+		display:block;
+	}
+	.img_block_2{
+		display: inline-block;
+		width: 100%;
+		height: 128px;
+		border: 1px solid #d3d3d3;
+		margin: 10px 0px 30px 0px;
+		vertical-align:top;
+	}
+	.img_foot{
+		display: block;
+    	float: right;
+    	width: 100px;
+    	height: 70px;
+    	padding: 20px 0px 0px 0px;
+	}
+	.img_main{
+		width: 350px;
+    	margin: 0;
+    	padding:20px 0;
+    	text-align: left;
+    	display: inline-block;
+    }
+
+/* Блоки отвечающие за ширину контента*/
+
+	header{
+ 		display: inline-block;
+ 		width: 100%;
+ 		height: 69px;
+ 		background-color: #1b1918;
+ 	}
+ 	footer{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+	.image{
+   		width: 100%;
+   		display: block;
+   		margin: 0 auto;
+   		padding: 0;
+	}
+	.maps{
+		width: 320px;
+		height: 287px;
+		background-color: #fff;
+		margin: 0 auto;
+		padding: 10px 0px 20px 0px;
+		list-style: none;
+	}
+	.block{
+   		width: 100%;
+   		display: block;
+  		margin: 0;
+  		padding: 0;
+  	}
+}
+
+
+
+/*сборщик веб пак
+*/
