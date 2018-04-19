@@ -1,0 +1,22 @@
+{
+  "name": "proekt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodion-PRA/---.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodion-PRA/---/issues"
+  },
+  "homepage": "https://github.com/Rodion-PRA/---#readme",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^4.6.0"
+  }
+}
